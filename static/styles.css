@@ -1,0 +1,16 @@
+#game {
+    float: left;
+}
+
+#controls {
+    margin-left: 100px;
+    float: left;
+}
+
+#player {
+    font-weight: bold;
+}
+
+#player-join {
+    display: none;
+}

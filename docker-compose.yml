@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./static:/usr/share/nginx/html:ro
+  server:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/go/src/github.com/m110/canvas-game
