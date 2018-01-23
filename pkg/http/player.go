@@ -95,7 +95,7 @@ func (s PlayerResource) FetchPlayerUpdates(w http.ResponseWriter, r *http.Reques
 			data, err := json.Marshal(response)
 			if err != nil {
 				log.Println("Error marshaling response:", err)
-				return
+				continue
 			}
 
 			fmt.Fprintf(w, "data: %s\n\n", data)
